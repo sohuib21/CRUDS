@@ -1,0 +1,73 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/test-site/styles/CRUDS.css">
+    <script defer src="/test-site/scripts/CRUDS.js"></script>
+</head>
+<body>
+   <div class="cruds">
+
+    <div class="head">
+        <h1>CRUDS</h1>
+        <p>cruet read updet dlet serch</p>
+    </div>
+
+    <div class="inpot">
+
+        <input id="names"  type="text" placeholder="name" >
+
+        <div class="pries">
+        <input onkeyup="gettotl()" id="pries"  type="number" placeholder="name">
+        <input onkeyup="gettotl()" id="taxts"  type="number" placeholder="name">
+        <input onkeyup="gettotl()" id="ads"  type="number" placeholder="name">
+        <input onkeyup="gettotl()" id="discont"  type="number" placeholder="name">
+        <small id="totl"></small>
+
+        </div>
+
+        <input id="number"  type="text" placeholder="name" >
+        <input id="text"  type="text" placeholder="name" >
+        <button id="submt" >crat</button>    
+
+    </div>
+
+    <div class="outpot">
+
+        <div class="surch">
+        <input onkeyup="srh(this.value)" id="surch" type="text" placeholder="name" >
+
+        <div class="btc">
+        <button onclick='srchid(this.id)' id="srhnim">supmnt</button>
+        <button onclick='srchid(this.id)' id="srhctcore">supmnt</button>  
+        </div>
+
+        </div>
+      <div id="dleatall">
+        
+      </div>
+        <table>
+            <tr>
+                <th>id</th>
+                <th>tietl</th>
+                <th>price</th>
+                <th>taxes</th>
+                <th>ads</th>
+                <th>discount</th>
+                <th>discount</th>
+                <th>catgory</th>
+                <th>update</th>
+                <th>delete</th>
+            </tr>
+            <tbody id="tabl">
+ 
+            </tbody>
+        </table>
+
+    </div>
+
+   </div> 
+</body>
+</html>
